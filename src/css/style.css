@@ -363,4 +363,228 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../fonts/Roboto/Roboto-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, p, a, span {
+  color: #363636;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.text-line {
+  display: inline-flex;
+}
+
+.line {
+  border: 1px solid #363636;
+}
+
+#landing {
+  height: 800px;
+  background: #F9F9F9;
+  position: relative;
+}
+
+header {
+  display: flex;
+  height: 92px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px;
+}
+header .logo {
+  font-size: 24px;
+  font-weight: 500;
+  color: #363636;
+}
+
+.nav-menu ul {
+  display: inline-flex;
+  align-items: center;
+}
+.nav-menu li {
+  margin-right: 54px;
+  font-size: 18px;
+}
+.nav-menu li:last-child {
+  margin-right: 0px;
+  border: 1px solid #DADADA;
+  border-radius: 25px;
+  display: block;
+  text-align: center;
+  padding: 15px 19px;
+}
+.nav-menu li a {
+  color: #777777;
+}
+
+.landing-content {
+  display: flex;
+  position: relative;
+  width: 950px;
+  height: 368px;
+  margin: 136px auto;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.left-wrapper {
+  width: 440px;
+}
+.left-wrapper__text-intro {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.left-wrapper h1 {
+  font-weight: 700;
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+.left-wrapper__text-line {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+.left-wrapper__text-line hr {
+  width: 40px;
+  margin-right: 10px;
+}
+.left-wrapper__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-wrapper__text {
+  margin-bottom: 55px;
+}
+
+.arrow-btn {
+  position: relative;
+}
+.arrow-btn__big-ellipse {
+  background: #D9D9D9;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+.arrow-btn__label {
+  position: absolute;
+  top: 18px;
+  left: 25px;
+  width: 180px;
+}
+.arrow-btn__label span {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.social-media__item {
+  margin-right: 10px;
+}
+.social-media__item:last-child {
+  margin-right: 0px;
+}
+.social-media__item img {
+  filter: invert(19%) sepia(3%) saturate(36%) hue-rotate(314deg) brightness(92%) contrast(90%);
+}
+
+.right-wrapper {
+  position: relative;
+}
+.right-wrapper__letter {
+  width: 350px;
+}
+.right-wrapper__sculpture {
+  width: 337px;
+  position: absolute;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.35)) brightness(150%);
+  top: 25px;
+  left: 25px;
+}
+
+.ellipse {
+  background: #FFFFFF;
+  width: 588px;
+  height: 588px;
+  border-radius: 50%;
+  position: absolute;
+  top: 106px;
+  left: 426px;
+  z-index: 1;
+}
+
+.scroll {
+  position: absolute;
+  right: 10px;
+  bottom: 100px;
+  display: inline-flex;
+  align-items: center;
+  transform: rotate(90deg);
+}
+.scroll p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+.scroll img {
+  transform: rotate(-90deg);
+  margin-left: 40px;
+}
+
+footer {
+  background: #363636;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
