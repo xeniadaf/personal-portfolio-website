@@ -61,13 +61,13 @@ h1, h2, h3, h4, p, a, span
 
 .text
     font-size: 18px
+    font-weight: 400
+    line-height: 22px
 
-.text-line
-    display: inline-flex
-
-.line
-    border: 1px solid $dark-color
-    
+.roboto-text
+    font-family: 'Montserrat', sans-serif
+    font-size: 16px
+    font-weight: 400    
 
 #landing
     height: 800px
@@ -123,12 +123,14 @@ header
         font-size: 64px
         margin-bottom: 10px
     &__text-line
+        display: inline-flex
         font-size: 24px
         font-weight: 500
         margin-bottom: 25px
         hr
             width: 40px
-            margin-right: 10px 
+            margin-right: 10px
+            border: 1px solid $dark-color 
     &__contacts
         display: flex
         justify-content: space-between
@@ -137,7 +139,7 @@ header
         margin-bottom: 55px
 
 
-.arrow-btn
+.contact-btn
     position: relative
     &__big-ellipse
         background: #D9D9D9
@@ -175,7 +177,7 @@ header
         top: 25px
         left: 25px
 
-.ellipse
+.white-ellipse
     background: #FFFFFF
     width: 588px
     height: 588px
@@ -201,6 +203,105 @@ header
         margin-left: 40px
 
 
+
+// ===== Projects section =====
+.container
+    width: 1143px
+    margin: 0 auto
+
+.section-title
+    display: inline-flex
+    align-items: center
+    h2
+        font-size: 48px
+        font-weight: 700
+        margin-right: 15px
+    hr
+        width: 70px
+        border: 1px solid $dark-color
+
+
+#projects
+    min-height: 1900px
+    padding-top: 100px
+
+.projects-title
+    margin-bottom: 40px
+
+.project-item
+    display: flex
+    position: relative
+    align-items: center
+    margin-bottom: 100px
+    &:last-child
+        margin-bottom: 0
+    &__img
+        width: 650px
+        border-radius: 15px
+        filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.4)) blur(1.5px) brightness(0.5)
+    &__description
+        position: absolute
+        display: flex
+        flex-direction: column
+        h3
+            font-weight: 700
+            font-size: 32px
+            margin-bottom: 20px
+    &__card
+        width: 640px
+        height: 200px
+        background: #D9D9D9
+        border-radius: 10px
+        filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.25))
+        padding: 35px 50px
+        margin-bottom: 10px
+    &__roboto-text
+        margin-bottom: 35px
+    &__btns
+        display: flex
+        
+
+.odd-project
+    &__description
+        right: 0px
+        align-items: flex-end
+        
+.even-project
+    flex-direction: row-reverse
+    &__description
+        left: 0px
+        
+.arrow-btn
+    width: 130px
+    &:first-child
+        margin-right: 30px
+    a
+        position: relative
+    &__ellipse
+        background: #D9D9D9
+        width: 35px
+        height: 35px
+        border-radius: 50%
+    &__label
+        position: absolute
+        top: 10px
+        left: 16px
+        span
+            font-size: 16px
+            font-weight: 600    
+
+    
+    
+
+
+
+
+
+
+
+
+
+// ===== Footer =====
 footer
     background: $dark-color
     height: 80px
