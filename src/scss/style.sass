@@ -46,7 +46,7 @@
 
 // ===== Variables =====
 $dark-color: #363636
-
+$light-grey: #D9D9D9
 
 
 // ===== Main =====
@@ -59,15 +59,17 @@ h1, h2, h3, h4, p, a, span
     font-family: 'Montserrat', sans-serif
     text-decoration: none
 
+h3
+    font-weight: 700
+    font-size: 32px
+
 .text
     font-size: 18px
     font-weight: 400
     line-height: 22px
+    &_light
+        color: $light-grey
 
-.roboto-text
-    font-family: 'Montserrat', sans-serif
-    font-size: 16px
-    font-weight: 400    
 
 #landing
     height: 800px
@@ -94,7 +96,7 @@ header
         font-size: 18px
         &:last-child
             margin-right: 0px
-            border: 1px solid #DADADA
+            border: 1px solid $light-grey
             border-radius: 25px
             display: block
             text-align: center
@@ -142,7 +144,7 @@ header
 .contact-btn
     position: relative
     &__big-ellipse
-        background: #D9D9D9
+        background: $light-grey
         width: 52px
         height: 52px
         border-radius: 50%
@@ -208,6 +210,8 @@ header
 .container
     width: 1143px
     margin: 0 auto
+    position: relative
+    z-index: 2
 
 .section-title
     display: inline-flex
@@ -219,7 +223,6 @@ header
     hr
         width: 70px
         border: 1px solid $dark-color
-
 
 #projects
     min-height: 1900px
@@ -244,23 +247,23 @@ header
         display: flex
         flex-direction: column
         h3
-            font-weight: 700
-            font-size: 32px
             margin-bottom: 20px
     &__card
         width: 640px
         height: 200px
-        background: #D9D9D9
+        background: $light-grey
         border-radius: 10px
         filter: drop-shadow(2px 4px 10px rgba(0, 0, 0, 0.25))
         padding: 35px 50px
         margin-bottom: 10px
     &__roboto-text
         margin-bottom: 35px
+        font-family: 'Roboto', sans-serif
+        font-size: 16px
+        font-weight: 400
     &__btns
         display: flex
         
-
 .odd-project
     &__description
         right: 0px
@@ -278,7 +281,7 @@ header
     a
         position: relative
     &__ellipse
-        background: #D9D9D9
+        background: $light-grey
         width: 35px
         height: 35px
         border-radius: 50%
@@ -290,17 +293,144 @@ header
             font-size: 16px
             font-weight: 600    
 
+
+
+// ===== About section =====   
+
+.about-section
+    position: relative
+    background: $dark-color
+    min-height: 750px
+    padding-top: 100px
+    overflow: hidden
+    &__description
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 50px
+    &__text
+        width: 500px
+    &__profile-img
+        width: 250px
+        height: 250px
+        border-radius: 50%
+        background-image: url("/src/img/portrait ksenia.JPG")
+        background-size: cover
+        background-position: center
+    &__skills
+        text-align: center
+        h3
+            margin-bottom: 50px
+        
+.skills
+    &__container
+        width: 689px
+        height: 200px
+        margin: 0 auto
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+        align-content: space-between
+        text-align: center
+
+    &__icon-box
+        width: 115px
+        img
+            width: 50px
+            filter: invert(100%) sepia(1%) saturate(7471%) hue-rotate(97deg) brightness(103%) contrast(104%)  
+        p
+            color: $light-grey
+            font-family: 'Roboto', sans-serif
+            font-size: 16px
+            font-weight: 400
+
+.about-title
+    margin-bottom: 30px
+    h2
+        color: #FFFFFF
+    hr
+        border: 1px solid #FFFFFF
+
+
+.big-x
+    width: 80%
+    position: absolute
+    top: -84px
+    left: -73px
+
+
+
+// ===== Contact section =====
+.contact-section
+    min-height: 700px
+    background: #F9F9F9
+    padding-top: 110px
+    &__content-container
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+    &__description
+        width: 450px
+        p
+            margin-bottom: 20px
+    &__text-line
+        display: inline-flex
+        font-size: 20px
+        font-weight: 500
+        hr
+            width: 40px
+            margin-right: 10px
+            border: 1px solid $dark-color
+
+.contact-title
+    margin-bottom: 30px
+
+
+.contact-form
+    max-width: 475px
+    min-height: 479px
+    background: #FFFFFF
+    border: 1px solid #ABABAB
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.2)
+    border-radius: 20px
+    padding: 50px 40px
+    label
+        font-family: 'Roboto'
+        font-weight: 400
+        font-size: 16px
+        color: $dark-color
+        margin-bottom: 7px
+    input, textarea
+        width: 100%
+        padding: 10px
+        margin: 7px 0 20px 0
+        font-size: 1rem
+        border-radius: 5px
+        border: 1.5px solid $light-grey
+    button
+        width: 100%
+        height: 50px
+        border-radius: 5px
+        border: none
+        background: $dark-color
+        color: #FFFFFF
+        font-family: 'Roboto'
+        font-weight: 500
+        font-size: 18px
+
+
+#name
+    background: url("/src/img/User.svg") no-repeat 10px
+    padding-left: 44px  
+
+#email
+    background: url("/src/img/Envelope.svg") no-repeat 10px
+    padding-left: 44px
+
+
     
-    
-
-
-
-
-
-
-
-
-
 // ===== Footer =====
 footer
     background: $dark-color
